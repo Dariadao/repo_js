@@ -16,7 +16,3 @@ console.log(
     1
   )}. ${studentSurname}'s average score is ${averageScore}`
 );
-<<<<<<< HEAD
-=======
-
->>>>>>> 638756472b4a31e303139b20b1011be6563a4260
