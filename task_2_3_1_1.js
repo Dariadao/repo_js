@@ -37,7 +37,7 @@ const testPlayers1 = [
     name: "Bob",
     scorePoints: 0,
   },
-  // Ожидаемый результат: { id: 1, name: "John", scorePoints: 5000 }
+  // Ожидаемый результат: { id: 1, name: "John", scorePoints: 1 }
 ];
 
 const testPlayers2 = [
@@ -57,7 +57,7 @@ const testPlayers2 = [
     scorePoints: 3500,
   },
 ];
-// Ожидаемый результат:{ id: 1, name: "Emily", scorePoints: 3500 }
+// Ожидаемый результат:{ id: 1, name: "Emily", scorePoints: 3500.01 }
 
 const testPlayers3 = [];
 // Ожидаемый результат: undefined (так как массив пустой)
