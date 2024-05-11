@@ -31,8 +31,22 @@ function calculateSumOfYearlyExpences(expences) {
 
 calculateSumOfYearlyExpences(yearlyExpences);
 
-expencesExamples.forEach((example) => {
-  let yearlyExpencesObj = example.yearlyExpences;
-  let sumObj = calculateSumOfYearlyExpences(yearlyExpencesObj);
-  console.log(sumObj);
-});
+function printMonthsForLowExpenses(expencesExamples) {
+  expencesExamples.forEach((example) => {
+    let yearlyExpencesObj = example.yearlyExpences;
+    let sumObj = calculateSumOfYearlyExpences(yearlyExpencesObj);
+    console.log(sumObj);
+
+    yearlyExpences.forEach((expense, index) => {
+      if (expense <= 1000) {
+        const month = new Date(0, index).toLocaleString("ru", {
+          month: "long",
+        });
+
+        console.log(`Месяц: ${month}, Затраты: ${expense}`);
+      }
+    });
+  });
+}
+
+printMonthsForLowExpenses(expencesExamples);
