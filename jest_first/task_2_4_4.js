@@ -9,4 +9,6 @@ const calculateBonus = (a, b) => {
   return bonus;
 };
 
-calculateBonus(20, 35);
+calculateBonus();
+
+module.exports = calculateBonus;
